@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body>
+        <div class="container">
+            <div class="score-container">
+                <h3 id="title">HOME</h3>
+                <button onclick="resetHome()" class="score-btn">Reset Home</button>
+                <h2 id="home-score" class="score">0</h2>
+                <div class="buttons">
+                    <button id="home-btn-add1" class="score-btn" onclick="homeIncreaseOne()">+1</button>
+                    <button id="home-btn-add2" class="score-btn" onclick="homeIncreaseTwo()">+2</button>
+                    <button id="home-btn-add3" class="score-btn" onclick="homeIncreaseThree()">+3</button>
+                </div>
+            </div>
+
+            <div class="score-container">
+                <h3 id="title">GUEST</h3>
+                <button onclick="resetGuest()" class="score-btn">Reset Guest</button>
+                <h2 id="guest-score" class="score">0</h2>
+                <div class="buttons" >
+                    <button id="guest-btn-add1" class="score-btn" onclick="guestIncreaseOne()">+1</button>
+                    <button id="guest-btn-add2" class="score-btn" onclick="guestIncreaseTwo()">+2</button>
+                    <button id="guest-btn-add3" class="score-btn" onclick="guestIncreaseThree()">+3</button>
+                </div>
+            </div>
+                
+        </div>
+        <script src="index.js"></script>
+        <button onclick="resetBoth()" class="score-btn" id="reset-all">New Game</button>
+
+    </body>
+</html>
