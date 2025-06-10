@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Timer';                     
-  src: url('CursedTimer.ttf') format('truetype'), local('sans-serif');
+  src: url('CursedTimer.ttf') format('truetype');
 
   font-weight: normal;
   font-style: normal;
@@ -56,7 +56,7 @@ body {
     width: 90px;     
     text-align: center;
     border-radius: 10%;
-    font-family: 'Timer', sans-serif, Arial, Helvetica;
+    font-family: 'Timer', Arial, Helvetica;
     text-shadow:
         0 0 6px rgba(255, 65, 54, 0.7),
         0 0 12px rgba(255, 65, 54, 0.5);
@@ -82,7 +82,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: transparent;
-    color: transparent;
+    /* Removed color: transparent; for better accessibility */
     
 }
 #title{
@@ -90,7 +90,7 @@ body {
     padding-bottom: 10px;
     margin: 0px;
     text-shadow: 1px 1px 4px black;
-    font-family: 'Timer' , sans-serif;
+    font-family: sans-serif;
     color: #CCCCCC;
 
 }
@@ -112,7 +112,7 @@ body {
   background-color: transparent;
   border: 2px solid #FF4136; 
   border-radius: 6px;
-  color: #FF4136;
+  color: #D32F2F;  
   
   /* centering & cursor */
   display: inline-block;    
@@ -159,9 +159,10 @@ body {
 /* Hover/focus states */
 #reset-all:hover,
 #reset-all:focus {
-  background-color: #FFFFFF;  /* invert on hover */
+  background-color: #F0F0F0;  
   color: #FF4136;
-  transform: scale(1.05);     /* slight grow */
-  outline: none;
+  transform: scale(1.05);     
+  outline: 2px solid #FF4136; 
+  outline-offset: 2px;      
 }
 
