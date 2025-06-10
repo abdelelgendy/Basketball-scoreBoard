@@ -15,11 +15,11 @@ const guestAddThree = document.getElementById("guest-btn-add3");
 
 
 function homeIncreaseOne(){
-    homeScoreEl.innerText =+ homeScoreEl.innerText +1
+    homeScoreEl.innerText = parseInt(homeScoreEl.innerText) + 1
 }
 
 function homeIncreaseTwo(){
-    homeScoreEl.innerText =+ homeScoreEl.innerText +2
+    homeScoreEl.innerText = parseInt(homeScoreEl.innerText) + 2
 }
 
 function homeIncreaseThree(){
@@ -29,15 +29,15 @@ function homeIncreaseThree(){
 
 
 function guestIncreaseOne(){
-       guestScoreEl.innerText =+ guestScoreEl.innerText +1 
+       guestScoreEl.innerText = parseInt(guestScoreEl.innerText) + 1 
 }
 
 function guestIncreaseTwo(){
-       guestScoreEl.innerText =+ guestScoreEl.innerText +2    
+       guestScoreEl.innerText = parseInt(guestScoreEl.innerText) + 2;    
 }
 
 function guestIncreaseThree(){
-       guestScoreEl.innerText =+ guestScoreEl.innerText +3    
+       guestScoreEl.innerText = parseInt(guestScoreEl.innerText) + 3;    
 }
 
 function resetHome() {
