@@ -1,7 +1,6 @@
 @font-face {
-  font-family: 'Timer';                     
-  src: url('CursedTimer.ttf') format('truetype');
-
+  font-family: 'Timer';
+  src: url('fonts/CursedTimer.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -9,6 +8,7 @@
 
 
 body {
+  --primary-color: #FF4136; /* Define CSS variable for consistent theming */
   padding-top: 20px;
   margin: 0;
   background-image: url('images/MJ.jpg');
@@ -51,12 +51,12 @@ body {
     margin-bottom: 25px;
     margin-top: 10px;
     background-color: #111111;
-    color:#FF4136;
+    color: var(--primary-color);
     font-size: 50px;
     width: 90px;     
     text-align: center;
     border-radius: 10%;
-    font-family: 'Timer', Arial, Helvetica;
+    font-family: 'Timer', Arial, Helvetica, sans-serif;
     text-shadow:
         0 0 6px rgba(255, 65, 54, 0.7),
         0 0 12px rgba(255, 65, 54, 0.5);

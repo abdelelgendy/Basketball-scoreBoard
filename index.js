@@ -15,7 +15,8 @@ const guestAddThree = document.getElementById("guest-btn-add3");
 
 
 function homeIncreaseOne(){
-    homeScoreEl.innerText = parseInt(homeScoreEl.innerText) + 1;
+    const currentScore = parseInt(homeScoreEl.innerText);
+    homeScoreEl.innerText = (isNaN(currentScore) ? 0 : currentScore) + 1;
     highlightLeader();
 }
 
